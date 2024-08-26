@@ -1,0 +1,181 @@
+{
+  // Language specific
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.preferences.useAliasesForRenames": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.preferences.useAliasesForRenames": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "tailwindCSS.includeLanguages": {
+    "svelte": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.clang_format_sortIncludes": false,
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "C_Cpp.inlayHints.parameterNames.enabled": false,
+  "[c]": {
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "cmake.showOptionsMovedNotification": false,
+  "cmake.configureOnOpen": true,
+  "[gdscript]": {
+    "editor.insertSpaces": false
+  },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.terminal.activateEnvironment": true,
+  "[csharp]": {},
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+
+  // Vim
+  "vim.useSystemClipboard": false,
+  "vim.foldfix": true,
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-a>": false,
+    "<C-z>": false,
+    "<C-y>": false,
+    "<C-f>": false,
+    "<C-h>": false,
+    "<C-f2>": false,
+    "<C-t>": false,
+    "<C-w>": false
+  },
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.commandLineModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  // git
+  "git.confirmSync": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // Editor
+  "editor.fontFamily": "'Fira Code', consolas, monospace",
+  "editor.fontWeight": "400",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.mouseWheelZoom": true,
+  "editor.fontSize": 17,
+  "editor.linkedEditing": false,
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.quickSuggestionsDelay": 0,
+  "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": true,
+
+  // Workbench
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 20,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro",
+  "debug.console.fontSize": 17,
+
+  // Terminal
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+
+  // Window
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": -1,
+
+  // Misc
+  "keyboard.dispatch": "keyCode",
+  "files.autoSave": "off",
+  "files.associations": {
+    "*.uxml": "xml",
+    "*.uss": "css",
+    ".dockerignore": "ignore"
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": {
+      "when": "$(basename).py"
+    },
+    "**/__pycache__": true,
+    "**/.classpath": false,
+    "**/.project": false,
+    "**/.settings": false,
+    "**/.factorypath": false,
+    "Assets/**/*.meta": true
+  },
+
+  // Extensions misc
+  "extensions.autoUpdate": false,
+  "redhat.telemetry.enabled": false,
+  "settingsSync.keybindingsPerPlatform": false,
+  "gitlens.launchpad.indicator.enabled": false,
+  "material-icon-theme.activeIconPack": "react"
+}

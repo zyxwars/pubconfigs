@@ -1,0 +1,14 @@
+// Place your key bindings in this file to override the defaults
+[
+  { "key": "ctrl+;", "command": "workbench.action.showCommands" },
+  { "key": "ctrl+g", "command": "workbench.action.terminal.focus" },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  }
+]
