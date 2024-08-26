@@ -1,1 +1,1 @@
-Configs needed on machines without auth
+Store only configs needed on machines without auth
