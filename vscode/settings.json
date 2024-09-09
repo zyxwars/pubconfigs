@@ -103,7 +103,7 @@
       "after": ["<Esc>"]
     }
   ],
-  // git
+  // Git
   "git.confirmSync": true,
   "git.autofetch": true,
   "git.enableSmartCommit": false,
@@ -134,10 +134,11 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "One Dark Pro",
-  "debug.console.fontSize": 17,
+  "workbench.editor.wrapTabs": true,
 
   // Terminal
   "terminal.integrated.fontSize": 17,
+  "debug.console.fontSize": 17,
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.persistentSessionReviveProcess": "never",
 
@@ -145,9 +146,11 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
+  "window.density.editorTabHeight": "compact",
 
   // Misc
+  // used for xmodmap to work properly
   "keyboard.dispatch": "keyCode",
   "files.autoSave": "off",
   "files.associations": {
@@ -178,4 +181,6 @@
   "settingsSync.keybindingsPerPlatform": false,
   "gitlens.launchpad.indicator.enabled": false,
   "material-icon-theme.activeIconPack": "react"
+
+  // Environment specific, not version controlled
 }
