@@ -1,0 +1,9 @@
+[ids]
+
+*
+
+[main]
+
+capslock = backspace
+rightctrl = capslock
+backslash = leftshift

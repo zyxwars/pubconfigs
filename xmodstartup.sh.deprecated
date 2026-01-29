@@ -1,0 +1,7 @@
+#!/bin/bash           
+sleep 10;               
+echo "running xmodmap"
+xmodmap -e 'clear lock'
+xmodmap -e 'keycode 66 = BackSpace'
+xmodmap -e 'keycode 22 = Escape'
+xmodmap -e 'keycode 108 = Caps_Lock'

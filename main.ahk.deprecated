@@ -1,0 +1,6 @@
+LCtrl & Tab::AltTab
+Capslock::BackSpace
+RCtrl::Capslock
+vke2::LShift
+#c::!f4
+#t::Run "wt.exe"

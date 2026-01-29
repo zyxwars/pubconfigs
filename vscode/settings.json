@@ -1,0 +1,166 @@
+{
+  // Editor visuals
+  "editor.fontFamily": "'JetBrains Mono', 'Comic Sans MS'",
+  "editor.smoothScrolling": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [80],
+  "workbench.editor.wrapTabs": true,
+  "files.exclude": {
+    "**/.git": false
+  },
+  "editor.stickyScroll.enabled": false,
+
+  // Editor behavior
+  "workbench.startupEditor": "none",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
+  "files.eol": "\n",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "files.autoSave": "off",
+  "keyboard.dispatch": "keyCode", // used for xmodmap to work properly
+  "extensions.ignoreRecommendations": true,
+  "extensions.autoUpdate": false,
+  "settingsSync.keybindingsPerPlatform": false,
+
+  // Vim
+  "vim.useSystemClipboard": false,
+  "vim.foldfix": true,
+  "vim.useCtrlKeys": false,
+  "vim.handleKeys": {
+    "<C-u>": true,
+    "<C-d>": true,
+    "<C-r>": true,
+    "<C-o>": true,
+    "<C-i>": true
+  },
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.commandLineModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "y"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "I"],
+      "commands": ["editor.action.goToImplementations"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["K"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["<leader>", "|"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "-"],
+      "commands": ["workbench.action.splitEditorDown"]
+    }
+  ],
+  "vim.leader": "<space>",
+
+  // Git
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.plusFeatures.enabled": false,
+
+  // Extensions misc
+  "redhat.telemetry.enabled": false,
+  "ansible.lightspeed.enabled": false,
+  "ansible.lightspeed.suggestions.enabled": false,
+
+  // Web
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.useAliasesForRenames": false,
+  "typescript.preferences.useAliasesForRenames": false,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // C/C++
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+
+  // Other languages
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.analysis.typeCheckingMode": "standard",
+
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+
+  "files.associations": {
+    "*.uxml": "xml",
+    "*.uss": "css",
+    ".dockerignore": "ignore",
+    "*.Rmd": "rmd"
+  },
+
+  // Environment specific, not version controlled
+}

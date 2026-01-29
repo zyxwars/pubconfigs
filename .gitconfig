@@ -1,0 +1,11 @@
+[core]
+  editor = vim
+[alias]
+  co = checkout
+  cob = checkout -b
+  br = branch
+  ci = commit
+  st = status
+  sth = stash
+  aa = add -A
+  l = log

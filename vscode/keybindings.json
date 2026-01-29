@@ -1,0 +1,36 @@
+// Place your key bindings in this file to override the defaults
+[
+  { "key": "ctrl+g", "command": "workbench.action.terminal.focus" },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.files.action.focusFilesExplorer"
+  },
+
+  // --- Navigation ---
+  // {
+  //   "key": "shift+tab",
+  //   "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+  //   "when": "!activeEditorGroupEmpty"
+  // },
+  // {
+  //   "key": "shift+tab",
+  //   "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+  //   "when": "inEditorsPicker && inQuickOpen"
+  // },
+
+  // { "key": "ctrl+h", "command": "workbench.action.focusLeftGroup" },
+  // { "key": "ctrl+l", "command": "workbench.action.focusRightGroup" },
+  // { "key": "ctrl+k", "command": "workbench.action.focusAboveGroup" },
+  // { "key": "ctrl+j", "command": "workbench.action.focusBelowGroup" },
+
+  // --- Resizing ---
+  { "key": "ctrl+left", "command": "workbench.action.decreaseViewWidth" },
+  { "key": "ctrl+right", "command": "workbench.action.increaseViewWidth" },
+  { "key": "ctrl+up", "command": "workbench.action.increaseViewHeight" },
+  { "key": "ctrl+down", "command": "workbench.action.decreaseViewHeight" }
+]
