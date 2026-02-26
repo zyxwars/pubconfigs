@@ -1,6 +1,6 @@
 {
   // Editor visuals
-  "editor.fontFamily": "'JetBrains Mono', 'Comic Sans MS'",
+  "editor.fontFamily": "'Consolas', 'Comic Sans MS'", // Comic sans is used to catch fonts not loading
   "editor.smoothScrolling": true,
   "editor.minimap.enabled": false,
   "editor.rulers": [80],
@@ -22,8 +22,17 @@
   "files.autoSave": "off",
   "keyboard.dispatch": "keyCode", // used for xmodmap to work properly
   "extensions.ignoreRecommendations": true,
-  "extensions.autoUpdate": false,
+  "extensions.autoUpdate": false, // update extensions manually, only when needed
   "settingsSync.keybindingsPerPlatform": false,
+
+  // Copilot
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
 
   // Vim
   "vim.useSystemClipboard": false,
@@ -97,7 +106,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.preferences.useAliasesForRenames": false,
   "typescript.preferences.useAliasesForRenames": false,
-  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.preferences.includePackageJsonAutoImports": "on", //TODO: observe and tweak
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
