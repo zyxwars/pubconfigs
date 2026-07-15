@@ -1,2 +1,3 @@
-minimum-release-age: 20160
-trust-policy: no-downgrade
+minimumReleaseAge: 20160
+trustPolicy: no-downgrade
+blockExoticSubdeps: true
