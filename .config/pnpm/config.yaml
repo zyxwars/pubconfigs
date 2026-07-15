@@ -1,0 +1,4 @@
+dangerouslyAllowAllBuilds: false
+blockExoticSubdeps: true
+minimumReleaseAge: 20160
+trustPolicy: no-downgrade
