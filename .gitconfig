@@ -1,8 +1,14 @@
 [core]
   editor = vim
+
 [alias]
-  l = log
   b = branch
-  c = commit
-  co = checkout
+  c = checkout
+  co = commit
+  f = fetch
+  l = log
+  pl = pull
+  ps = push
+  rb = rebase
   s = status
+  sh = show
