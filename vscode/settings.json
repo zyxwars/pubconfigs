@@ -1,8 +1,7 @@
-{
-  "update.mode": "none",
+  "update.mode": "manual",
 
   // Editor visuals
-  "editor.fontFamily": "'Consolas', 'Comic Sans MS'", // Comic sans is used to catch fonts not loading
+  "editor.fontFamily": "Cascadia Code",
   "editor.smoothScrolling": true,
   "editor.minimap.enabled": false,
   "editor.rulers": [80],
@@ -26,6 +25,9 @@
   "extensions.ignoreRecommendations": true,
   "extensions.autoUpdate": false, // update extensions manually, only when needed
   "settingsSync.keybindingsPerPlatform": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
 
   // Copilot
   "github.copilot.nextEditSuggestions.enabled": false,
@@ -33,7 +35,8 @@
     "*": false,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "gdscript": false
   },
 
   // Vim
@@ -104,11 +107,8 @@
   "ansible.lightspeed.suggestions.enabled": false,
 
   // Web
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.preferences.useAliasesForRenames": false,
-  "typescript.preferences.useAliasesForRenames": false,
-  "typescript.preferences.includePackageJsonAutoImports": "on", //TODO: observe and tweak
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.preferences.useAliasesForRenames": false,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -155,16 +155,6 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
-  // Latex
-  "latex-workshop.latex.autoBuild.run": "onSave",
-  "latex-workshop.synctex.afterBuild.enabled": true,
-  "[latex]": {
-    "editor.wordWrap": "on",
-    "editor.formatOnSave": false,
-    "editor.fontFamily": "Consolas",
-    "editor.fontSize": 15
-  },
-
   // Other languages
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
@@ -174,16 +164,26 @@
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
-  "dotnet.codeLens.enableReferencesCodeLenos": false,
-  "[gdscript]": {
-    "editor.insertSpaces": false
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": false,
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 15
   },
 
   "files.associations": {
     "*.uxml": "xml",
     "*.uss": "css",
     ".dockerignore": "ignore",
-    "*.Rmd": "rmd"
+    "*.Rmd": "rmd",
+    "*.css": "tailwindcss"
+  },
+
+  "[gdscript]": {
+    "editor.insertSpaces": false
   },
 
   // Environment specific, not version controlled
