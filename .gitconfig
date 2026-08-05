@@ -8,7 +8,7 @@
   lg = log --oneline --graph --decorate
   rb = rebase
   rbi = rebase -i
-  rbia = rebase -i
+  rbia = rebase -i --autosquash
   rbc = rebase --continue
   rba = rebase --abort
   st = status
