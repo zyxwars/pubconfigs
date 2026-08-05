@@ -1,14 +1,21 @@
 [core]
   editor = vim
-
 [alias]
   b = branch
-  c = checkout
-  co = commit
-  f = fetch
   l = log
-  pl = pull
-  ps = push
+  co = checkout
+  ci = commit
+  lg = log --oneline --graph --decorate
   rb = rebase
-  s = status
+  rbi = rebase -i
+  rbia = rebase -i
+  rbc = rebase --continue
+  rba = rebase --abort
+  st = status
   sh = show
+  amend = commit --amend --no-edit
+  fixup = commit --fixup
+  undo = reset --soft HEAD~1
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  pushf = push --force-with-lease
