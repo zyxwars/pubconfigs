@@ -1,4 +1,6 @@
+{
   "update.mode": "manual",
+  "extensions.autoUpdate": false,
 
   // Editor visuals
   "editor.fontFamily": "Cascadia Code",
@@ -7,7 +9,7 @@
   "editor.rulers": [80],
   "workbench.editor.wrapTabs": true,
   "files.exclude": {
-    "**/.git": false
+    "**/.git": false,
   },
   "editor.stickyScroll.enabled": false,
 
@@ -23,11 +25,11 @@
   "files.autoSave": "off",
   "keyboard.dispatch": "keyCode", // used for xmodmap to work properly
   "extensions.ignoreRecommendations": true,
-  "extensions.autoUpdate": false, // update extensions manually, only when needed
   "settingsSync.keybindingsPerPlatform": false,
   "editor.quickSuggestions": {
-    "strings": "on"
+    "strings": "on",
   },
+  "editor.inlayHints.enabled": "offUnlessPressed",
 
   // Copilot
   "github.copilot.nextEditSuggestions.enabled": false,
@@ -36,7 +38,7 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "gdscript": false
+    "gdscript": false,
   },
 
   // Vim
@@ -48,51 +50,51 @@
     "<C-d>": true,
     "<C-r>": true,
     "<C-o>": true,
-    "<C-i>": true
+    "<C-i>": true,
   },
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
       "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
+      "after": ["<Esc>"],
+    },
   ],
   "vim.commandLineModeKeyBindingsNonRecursive": [
     {
       "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
+      "after": ["<Esc>"],
+    },
   ],
   "vim.insertModeKeyBindingsNonRecursive": [
     {
       "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
+      "after": ["<Esc>"],
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["g", "y"],
-      "commands": ["editor.action.goToTypeDefinition"]
+      "commands": ["editor.action.goToTypeDefinition"],
     },
     {
       "before": ["g", "I"],
-      "commands": ["editor.action.goToImplementations"]
+      "commands": ["editor.action.goToImplementations"],
     },
     {
       "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
+      "commands": ["editor.action.goToReferences"],
     },
     {
       "before": ["K"],
-      "after": ["g", "h"]
+      "after": ["g", "h"],
     },
     {
       "before": ["<leader>", "|"],
-      "commands": ["workbench.action.splitEditorRight"]
+      "commands": ["workbench.action.splitEditorRight"],
     },
     {
       "before": ["<leader>", "-"],
-      "commands": ["workbench.action.splitEditorDown"]
-    }
+      "commands": ["workbench.action.splitEditorDown"],
+    },
   ],
   "vim.leader": "<space>",
 
@@ -100,6 +102,7 @@
   "git.openRepositoryInParentFolders": "always",
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.plusFeatures.enabled": false,
+  "gitlens.terminalLinks.showIn": "inspect",
 
   // Extensions misc
   "redhat.telemetry.enabled": false,
@@ -110,68 +113,69 @@
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "js/ts.preferences.useAliasesForRenames": false,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+    "editor.defaultFormatter": "svelte.svelte-vscode",
   },
   "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   // C/C++
   "C_Cpp.clang_format_fallbackStyle": "Google",
+  "C_Cpp.inlayHints.parameterNames.enabled": true,
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "ms-vscode.cpptools",
   },
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "ms-vscode.cpptools",
   },
 
-  // Other languages
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.black-formatter",
   },
   "python.analysis.typeCheckingMode": "standard",
 
   "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
   },
   "dotnet.codeLens.enableReferencesCodeLens": false,
+
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.synctex.afterBuild.enabled": true,
   "[latex]": {
     "editor.wordWrap": "on",
     "editor.formatOnSave": false,
     "editor.fontFamily": "Consolas",
-    "editor.fontSize": 15
+    "editor.fontSize": 15,
   },
 
   "files.associations": {
@@ -179,12 +183,10 @@
     "*.uss": "css",
     ".dockerignore": "ignore",
     "*.Rmd": "rmd",
-    "*.css": "tailwindcss"
+    "*.css": "tailwindcss",
   },
 
   "[gdscript]": {
-    "editor.insertSpaces": false
+    "editor.insertSpaces": false,
   },
-
-  // Environment specific, not version controlled
 }
