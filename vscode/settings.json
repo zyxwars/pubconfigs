@@ -1,6 +1,6 @@
 {
   "update.mode": "manual",
-  "extensions.autoUpdate": false,
+  "extensions.autoUpdate": "off",
 
   // Editor visuals
   "editor.fontFamily": "Cascadia Code",
