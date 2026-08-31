@@ -189,4 +189,6 @@
   "[gdscript]": {
     "editor.insertSpaces": false,
   },
+
+  // Environment specific, not version controlled
 }
